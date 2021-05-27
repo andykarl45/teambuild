@@ -1,0 +1,29 @@
+.btn-plus{
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    /* text-transform: capitalize; */
+    
+
+}
+
+.btn-minus{
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    /* text-transform: capitalize; */
+}
+.btn-minus:before{
+    content: "=";
+}
+.btn-plus:before{
+    content:"+ ";
+    ;
+    
+    
+}
+.btn-minus:before{
+    content:"- ";
+    ;
+    
+}

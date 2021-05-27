@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* ----------------------------------en-tête---------------------------------------- */
+
+  /* Style the header */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    background-image: url(../img/b.jpg);
+  }
+  
+  /* Augmenter la taille de la police de l'élément h1 */
+  .header h1 {
+    font-size: 40px;
+  }
+
+
+  /* ----------------------------------navbar---------------------------------------- */
+
+  /* Style the top navigation bar */
+.navbar {
+    overflow: hidden; /* Masquer le débordement*/
+    background-color: #333; /* Couleur de fond sombre */
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left; /* Assurez-vous que les liens restent côte à côte */
+    display: block; /* Changer l'affichage pour bloquer, pour des raisons réactives (voir ci-dessous) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right; /* Float a link to the right */
+  }
+  
+  /* Changer la couleur au survol / au survol de la souris */
+  .navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+  }
+
+
+    /* ----------------------------------contenue---------------------------------------- */
+
+  /* Nouus utilisons CSS Flexbox pour gérer la mise en page */
+
+/* Assurer le bon dimensionnement*/
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+   flex-wrap: wrap; /* flex-wrap: enveloppement; */
+}
+
+/* Créez deux colonnes inégales qui se trouvent l'une à côté de l'autre */
+
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Définir la largeur de la barre latérale */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Définir la largeur du contenu principal */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+/* ----------------------------------responsive---------------------------------------- */
+
+
+/* Disposition réactive - lorsque l'écran mesure moins de 700 pixels de large, 
+faites en sorte que les deux colonnes s'empilent l'une sur l'autre plutôt que l'une à côté de l'autre */
+@media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+  /* Disposition réactive - lorsque l'écran mesure moins de 400 pixels de large, 
+  faites en sorte que les liens de navigation s'empilent les uns sur les autres plutôt que les uns à côté des autres */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+  /* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .big{
+    background-image: url(../img/zack.png);
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .bigger{
+     background-image: url(../img/e.jpg); 
+     border-radius: 8px;
+  }
+  .biggest{
+    background-image: url(../img/f.jpg); 
+    border-radius: 8px;
+ }
+  
+
+/*  ----------------------------------footer----------------------------------------  */
+
+
+  .pied-mot{
+	color:rgb(79,202,255);
+}
+.footer{
+	float:left;
+	width:100%;
+	text-align:center;
+	background-color:black;
+	color:silver;
+	height:70px;
+	padding:10px;
+
+}
